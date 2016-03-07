@@ -1,5 +1,9 @@
 package controller;
 
+
+import components.ConnectionMySql;
+import model.Person;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -28,7 +32,7 @@ public class IndexController extends HttpServlet {
         response.getWriter().write(String.valueOf(calc(request)));
     }
 
-    private Integer calc(HttpServletRequest request){
+    private Integer calc(HttpServletRequest request) {
         int num1 = Integer.valueOf(request.getParameter("num1"));
         int num2 = Integer.valueOf(request.getParameter("num2"));
         String op = request.getParameter("op");

@@ -9,9 +9,59 @@
         <servlet-class>controller.IndexController</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>PersonSelectController</servlet-name>
+        <servlet-class>controller.PersonSelectController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PersonDeleteController</servlet-name>
+        <servlet-class>controller.PersonDeleteController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PersonInsertController</servlet-name>
+        <servlet-class>controller.PersonInsertController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PersonUpdateController</servlet-name>
+        <servlet-class>controller.PersonUpdateController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PersonViewController</servlet-name>
+        <servlet-class>controller.PersonViewController</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>IndexController</servlet-name>
         <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PersonSelectController</servlet-name>
+        <url-pattern>/person/select</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PersonDeleteController</servlet-name>
+        <url-pattern>/person/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PersonInsertController</servlet-name>
+        <url-pattern>/person/insert</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PersonUpdateController</servlet-name>
+        <url-pattern>/person/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PersonViewController</servlet-name>
+        <url-pattern>/person/view</url-pattern>
     </servlet-mapping>
 
 </web-app>
